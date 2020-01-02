@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const [navActive, setNavActive] = useState(false);
-    const [items, setItems] = useState([
+    const [navItems, setnavItems] = useState([
         {
             id: 1,
             name: 'Home',
@@ -34,12 +34,19 @@ const Navbar: React.FC = () => {
     const handleNavActive = () => {
         setNavActive(!navActive);
 
-        items.forEach((item: any, index: number) => {
-            item.animation = {
-                animation: `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
-            };
+        navItems.forEach((item: any, index: number) => {
+            if (item.animation) {
+                item.animation = undefined;
+            }
+            else {
+                item.animation = {
+                    animation: `navLinkFade 0.5s ease forwards ${index / 7 +
+                        0.5}s`
+                };
+            }
         });
     };
+
     return (
         <React.Fragment>
             <header>
@@ -50,7 +57,7 @@ const Navbar: React.FC = () => {
                     <ul
                         className={`nav-links ${navActive ? 'nav-active' : ''}`}
                     >
-                        {items.map(item => (
+                        {navItems.map(item => (
                             <Link
                                 key={item.id}
                                 style={item.animation}
@@ -60,11 +67,22 @@ const Navbar: React.FC = () => {
                                 {item.name}
                             </Link>
                         ))}
+                        <Link
+                            style={{
+                                animation: `navLinkFade 0.5s ease forwards ${
+                                    navItems.length / 7 + 0.5}s`,
+                                display: navActive ? 'block' : 'none'
+                            }}
+                            className="li"
+                            to="/"
+                        >
+                            Contact
+                        </Link>
                     </ul>
                     <div className="cta">
                         <button>Contact</button>
                     </div>
-                    <div className="burger" onClick={() => handleNavActive()}>
+                    <div className={`burger ${navActive ? 'toggle' : ''}`} onClick={() => handleNavActive()}>
                         <div className="line1"></div>
                         <div className="line2"></div>
                         <div className="line3"></div>

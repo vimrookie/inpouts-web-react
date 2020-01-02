@@ -67,20 +67,25 @@ button:hover {
 
     div {
         width: 25px;
-        height: 5px;
+        height: 3px;
         background: $secondary-color;
-        margin: 3px;
+        margin: 5px;
         border-radius: 3px;
+        transition: all 0.3s ease;
     }
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 86vh;
+        height: 100%;
         width: 60%;
-        top: 14vh;
+        top: 12.5vh;
         background: $primary-color;
         display: flex;
         flex-direction: column;
@@ -95,6 +100,10 @@ button:hover {
 
     .burger {
         display: block;
+    }
+
+    .cta {
+        display: none;
     }
 }
 
@@ -112,4 +121,16 @@ button:hover {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
