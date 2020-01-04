@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
             <header>
                 <nav>
                     <div className="logo">
-                        <h4>The Nav</h4>
+                        <h4>Inpouts</h4>
                     </div>
                     <ul
                         className={`nav-links ${navActive ? 'nav-active' : ''}`}
