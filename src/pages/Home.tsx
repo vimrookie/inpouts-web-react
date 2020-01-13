@@ -5,6 +5,7 @@ import leftBackground from '../assets/images/left-section-background.png';
 import Services from './Services';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Footer from './Footer';
 
 const Home: React.FC = () => (
     <React.Fragment>
@@ -34,6 +35,7 @@ const Home: React.FC = () => (
         <Services />
         <Portfolio />
         <Contact />
+        <Footer />
     </React.Fragment>
 );
 
