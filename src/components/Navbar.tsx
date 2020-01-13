@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const [navActive, setNavActive] = useState(false);
-    const [navItems, setnavItems] = useState([
+    const [navItems] = useState([
         {
             id: 1,
             name: 'Home',
