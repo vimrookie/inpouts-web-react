@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                     <div className="contact-item">
                         <h3>Twitter:</h3>
                         <span>@gleycerparra</span>
-                        <span>@jthavalera</span>
+                        {/* <span>@jthavalera</span> */}
                     </div>
                     <div className="contact-item">
                         <h3>LinkedIn:</h3>
@@ -28,18 +28,18 @@ const Footer: React.FC = () => {
                         >
                             Gleycer Parra
                         </a>
-                        <a
+                        {/* <a
                             href="https://www.linkedin.com/in/gleycer-parra-889913b1"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
                             Jhonnathan Valera
-                        </a>
+                        </a> */}
                     </div>
                     <div className="contact-item">
                         <h3>Email:</h3>
                         <span>gleycerparra@gmail.com</span>
-                        <span>jthavalera@gmail.com</span>
+                        {/* <span>jthavalera@gmail.com</span> */}
                     </div>
                     <div className="contact-item">
                         <h3>Whatsapp:</h3>

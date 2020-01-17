@@ -34,7 +34,7 @@ const Home: React.FC = () => (
         </div>
         <Services />
         <Portfolio />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
     </React.Fragment>
 );
