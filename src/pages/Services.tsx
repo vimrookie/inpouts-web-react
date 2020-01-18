@@ -30,7 +30,7 @@ const Services: React.FC = () => {
         }
     ]);
     return (
-        <div className="services-container">
+        <div id="services" className="services-container">
             <h1>Our Services</h1>
             <h5>
                 We create technological solutions for our clients, optimizing

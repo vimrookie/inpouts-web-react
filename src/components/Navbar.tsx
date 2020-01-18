@@ -8,25 +8,25 @@ const Navbar: React.FC = () => {
         {
             id: 1,
             name: 'Home',
-            to: '/',
+            to: '#',
             animation: undefined
         },
-        {
+/*         {
             id: 2,
             name: 'About',
             to: '/',
             animation: undefined
-        },
+        }, */
         {
             id: 3,
             name: 'Services',
-            to: '/',
+            to: '#services',
             animation: undefined
         },
         {
             id: 4,
-            name: 'Projects',
-            to: '/',
+            name: 'Portfolio',
+            to: '#portfolio',
             animation: undefined
         }
     ]);
@@ -58,26 +58,27 @@ const Navbar: React.FC = () => {
                         className={`nav-links ${navActive ? 'nav-active' : ''}`}
                     >
                         {navItems.map(item => (
-                            <Link
+                            <a
                                 key={item.id}
                                 style={item.animation}
                                 className="li"
-                                to={item.to}
+                                /* to={item.to} */
+                                href={item.to}
                             >
                                 {item.name}
-                            </Link>
+                            </a>
                         ))}
-                        <Link
+                        <a
                             style={{
                                 animation: `navLinkFade 0.5s ease forwards ${
                                     navItems.length / 7 + 0.5}s`,
                                 display: navActive ? 'block' : 'none'
                             }}
                             className="li"
-                            to="/"
+                            href="/#"
                         >
                             Contact
-                        </Link>
+                        </a>
                     </ul>
                     <div className="cta">
                         <button>Contact</button>
