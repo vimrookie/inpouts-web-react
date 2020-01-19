@@ -10,11 +10,11 @@ import mysql from '../assets/images/icons/mysql-logo.png';
 const Portfolio: React.FC = () => {
     return (
         <div id="portfolio" className="portfolio-container">
-            <h1>Some Works</h1>
-            <h5>
+            <h1>Some works</h1>
+            <h3>
                 We create technological solutions for our clients, optimizing
                 the available resources and using the best tools in the market
-            </h5>
+            </h3>
             <div className="cards-container portfolio-card-container">
                 <div className="card">
                     <img

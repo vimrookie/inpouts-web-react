@@ -7,33 +7,41 @@
 
 .portfolio-container {
     display: flex;
+    background-color: $secondary-color;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 600px; /*eliminar este margen al agregar la seccion quienes somos*/
 
-    h1, h5 {
+    h1, h3, h5 {
         text-align: center;
     }
     
     h1 {
-        color: $secondary-color;
+        margin-top: 50px;
+        color: $text-secondary-color;
         font-weight: bold;
+    }
+
+    h3 {
+        margin-top: 10px;
+        color: $text-secondary-color;
     }
 
     h5 {
         margin-top: 10px;
-        color: $tertiary-color;
+        color: $secondary-color-dark;
         font-size: 16px;
     }
 }
 
 .ionic-icon {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
 }
 
 .mysql-icon {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
 }
 
 .angular-icon {

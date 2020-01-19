@@ -23,7 +23,7 @@ const Home: React.FC = () => (
                         products for our customers.
                     </h4>
                     <div className="learn-more">
-                        <button>More about us</button>
+                        <button className="home-button">More about us</button>
                     </div>
                 </div>
             </section>

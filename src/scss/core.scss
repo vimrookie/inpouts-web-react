@@ -4,9 +4,14 @@
 @import "partials/tooltips.scss";
 
 $font-stack: 'Lato', sans-serif;
-$primary-color: #C6F4FF;
-$secondary-color: #2C3F79;
-$tertiary-color: #30C5CC;
+$primary-color: #334466;
+$primary-color-light:#5f6f94;
+$primary-color-dark: #041d3b;
+$secondary-color: #c6c6c6;
+$secondary-color-light: #f9f9f9;
+$secondary-color-dark: #1b1b1b;
+$text-primary-color: #fafafa;
+$text-secondary-color: #1b1b1b;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-stack;

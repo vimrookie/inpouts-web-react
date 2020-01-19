@@ -32,10 +32,10 @@ const Services: React.FC = () => {
     return (
         <div id="services" className="services-container">
             <h1>Our Services</h1>
-            <h5>
+            <h3>
                 We create technological solutions for our clients, optimizing
                 the available resources and using the best tools in the market
-            </h5>
+            </h3>
             <div className="cards-container">
                 { services.map(item => <ServiceItem key={item.id} {...item} />) }
             </div>

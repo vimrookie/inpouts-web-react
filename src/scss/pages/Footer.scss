@@ -6,7 +6,8 @@
     justify-content: flex-start;
     align-items: center;
     font-family: $font-stack;
-    color: $secondary-color;
+    background-color: $primary-color;
+    color: $text-primary-color;
     padding: 30px;
 }
 
@@ -30,7 +31,7 @@
 
         a {
             text-decoration: underline;
-            color: $secondary-color;
+            color: $text-primary-color;
             font-weight: normal;
         }
     }

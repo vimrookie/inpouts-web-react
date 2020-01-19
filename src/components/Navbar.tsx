@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../scss/components/Navbar.scss';
-import { Link } from 'react-router-dom';
+import appLogo from '../assets/images/logo/inpout-logo-3.png';
+// import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const [navActive, setNavActive] = useState(false);
@@ -52,7 +53,7 @@ const Navbar: React.FC = () => {
             <header>
                 <nav>
                     <div className="logo">
-                        <h4>Inpouts</h4>
+                        <img src={appLogo} alt="inpout-logo.png"/>
                     </div>
                     <ul
                         className={`nav-links ${navActive ? 'nav-active' : ''}`}
