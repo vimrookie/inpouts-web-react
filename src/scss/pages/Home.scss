@@ -30,31 +30,31 @@
 .title {
     font-family: $font-stack;
     font-size: 86px;
-    color: $text-primary-color;
+    color: $text-secondary-color;
 }
 
 .subtitle {
     font-size: 26px;
     font-family: $font-stack;
-    color: $text-primary-color;
+    color: $text-secondary-color;
     text-transform: uppercase;
 }
 
 .description {
     font-family: $font-stack;
-    color: $text-primary-color;
+    color: $text-secondary-color;
     margin-top: 20px;
     width: 70%;
 }
 
 .home-button {
     padding: 9px 25px;
-    background-color: $secondary-color;
+    background-color: $text-secondary-color;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     border: none;
-    color: $text-secondary-color;
+    color: $text-primary-color;
 }
 
 button:hover {

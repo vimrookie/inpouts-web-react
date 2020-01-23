@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../scss/components/Navbar.scss';
-import appLogo from '../assets/images/logo/inpout-logo-3.png';
+import appLogo from '../assets/images/logo/inpout-logo-circle.png';
 // import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
